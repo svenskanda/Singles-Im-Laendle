@@ -1,0 +1,114 @@
+<h2>Registrierung<span class="hidden-xs"> auf singles-im-ländle.de</span></h2>
+
+<p>Registriere dich hier mit deinen Zugangsdaten...</p>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="login" class="col-sm-3 control-label">Loginname</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="login" placeholder="Login">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="vorname" class="col-sm-3 control-label">Vorname</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="vorname" name="vorname" placeholder="Vorname">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="nachname" class="col-sm-3 control-label">Nachname</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="nachname" name="nachname" placeholder="Nachname">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="email" class="col-sm-3 control-label">E-Mail Adresse</label>
+        <div class="col-sm-9">
+            <input  type="email" class="form-control" id="email" name="email" placeholder="E-Mail">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="birthday" class="col-sm-3 control-label">Geburtsdatum</label>
+        <div class="col-sm-9">
+            <input type="date" class="form-control" id="birthday" name="birthday">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="sex" class="col-sm-3 control-label">Geschlecht</label>
+        <div class="col-sm-9">
+            <select class="form-control" id="sex" name="sex">
+                <option>Keine Angabe</option>
+                <option>Männlich</option>
+                <option>Weiblich</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="relationship" class="col-sm-3 control-label">Beziehungsstatus</label>
+        <div class="col-sm-9">
+            <select class="form-control" id="relationship" name="relationship">
+                <option>Keine Angabe</option>
+                <option>Single</option>
+                <option>In einer Beziehung</option>
+                <option>Verlobt</option>
+                <option>Verheiratet</option>
+                <option>Es ist kompliziert</option>
+                <option>In einer offenen Beziehung</option>
+                <option>Verwittwet</option>
+                <option>Getrennt</option>
+                <option>Geschieden</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="password" class="col-sm-3 control-label">Passwort</label>
+        <div class="col-sm-9">
+            <input type="password" class="form-control" id="password" placeholder="Passwort">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="password2" class="col-sm-3 control-label">Passwort wiederholen</label>
+        <div class="col-sm-9">
+            <input type="password" class="form-control" id="password2" placeholder="Passwort">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="profile_image" class="col-sm-3 control-label">Profilbild</label>
+        <div class="col-sm-9">
+            <input type="file" id="profile_image">
+            <p class="help-block">Maximalgröße 500x500 Pixel, 2MB.</p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <label>
+                <input type="checkbox" name="agb" value="1"> Ja, ich habe die <a href="#">AGB</a> und
+                <a href="#">Datenschutzbestimmungen</a> gelesen und akzeptiert.
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <label>
+                <input type="checkbox" name="newsletter" value="1"> Ich möchte den Newsletter abonnieren.
+            </label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="button" class="btn btn-primary dom-json" data-what="json_blub">Absenden</button>
+        </div>
+    </div>
+</form>
