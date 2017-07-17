@@ -1,0 +1,30 @@
+
+Integrate PDO in Database INSERT requests
+https://www.php-einfach.de/mysql-tutorial/crashkurs-pdo/
+1. Select
+2. Insert
+
+1. Selet
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=databasename', 'username', 'password');
+ 
+$statement = $pdo->prepare("SELECT * FROM users WHERE vorname = :vorname AND nachname = :nachname");
+$statement->execute(array(':vorname' => 'Max', ':nachname' => 'Mustermann'));   
+while($row = $statement->fetch()) {
+   echo $row['vorname']." ".$row['nachname']."<br />";
+   echo "E-Mail: ".$row['email']."<br /><br />";
+}
+?>
+
+
+2. INSERT
+
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=databasename', 'username', 'password');
+ 
+$statement = $pdo->prepare("INSERT INTO users (email, vorname, nachname) VALUES (?, ?, ?)");
+$statement->execute(array('info@php-einfach.de', 'Klaus', 'Neumann'));   
+ 
+$neue_id = $pdo->lastInsertId();
+echo "Neuer Nutzer mit id $neue_id angelegt";
+?>
